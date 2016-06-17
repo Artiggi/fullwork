@@ -1,0 +1,149 @@
+2016-06-14 10:51:41 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'fullwork'' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Connection.php:600
+Stack trace:
+#0 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Connection.php(600): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#3 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#6 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\controllers\MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#17 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#18 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#19 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\OpenServer\domains\localhost\fullwork\yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'fullwork'' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Connection.php:547
+Stack trace:
+#0 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#1 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#4 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Schema.php(149): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\controllers\MigrateController.php(178): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(627): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#15 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#16 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#17 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\OpenServer\domains\localhost\fullwork\yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2016-06-14 10:51:41 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '96x9000 (96x25)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\artem.pogrebnov.ERG\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SSGPO-I6111709'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuBackHWND' => '0x0008026A'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '150813g'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0008027C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x000B02A6'
+    'ConEmuPID' => '4652'
+    'ConEmuPrompt0' => '$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S'
+    'ConEmuPrompt1' => '$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m'
+    'ConEmuPrompt2' => '$_$E[90m$G'
+    'ConEmuPrompt3' => '$E[m$S'
+    'ConEmuServerPID' => '5856'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'LOCALAPPDATA' => 'C:\\Users\\artem.pogrebnov.ERG\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DCSSGPO01'
+    'MAGICK_CODER_FILTER_PATH' => 'c:\\openserver\\modules\\imagemagick\\modules\\filters'
+    'MAGICK_CODER_MODULE_PATH' => 'c:\\openserver\\modules\\imagemagick\\modules\\coders'
+    'MAGICK_CONFIGURE_PATH' => 'c:\\openserver\\modules\\imagemagick'
+    'MAGICK_HOME' => 'c:\\openserver\\modules\\imagemagick'
+    'MAGICK_TEMPORARY_PATH' => 'c:\\openserver\\userdata\\temp'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache-2.2\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP-5.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP-5.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP-5.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP-5.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP-5.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP-5.4\\'
+    'PHP_COMMAND' => 'php.exe'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP-5.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP-5.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP-5.4\\PEAR\\tests'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_IDENTIFIER' => 'x86 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$G$E[m$S'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TERM' => 'msys'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'GROUP.ERG.KZ'
+    'USERDOMAIN' => 'ERG'
+    'USERNAME' => 'artem.pogrebnov'
+    'USERPROFILE' => 'C:\\Users\\artem.pogrebnov.ERG'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'YII_PATH' => 'c:\\OpenServer\\domains\\localhost\\fullwork\\'
+    'PHP_SELF' => 'c:\\OpenServer\\domains\\localhost\\fullwork\\yii'
+    'SCRIPT_NAME' => 'c:\\OpenServer\\domains\\localhost\\fullwork\\yii'
+    'SCRIPT_FILENAME' => 'c:\\OpenServer\\domains\\localhost\\fullwork\\yii'
+    'PATH_TRANSLATED' => 'c:\\OpenServer\\domains\\localhost\\fullwork\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1465890701.4745
+    'REQUEST_TIME' => 1465890701
+    'argv' => [
+        0 => 'c:\\OpenServer\\domains\\localhost\\fullwork\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

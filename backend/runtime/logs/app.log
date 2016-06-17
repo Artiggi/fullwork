@@ -1,0 +1,705 @@
+2016-06-15 14:05:23 [127.0.0.1][1][eimispoasm7p5aon1i02qc7l45][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\assets\AppAsset' in file: C:\OpenServer\domains\localhost\fullwork\backend/assets/AppAsset.php. Namespace missing?' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\assets\\AppA...')
+#1 C:\OpenServer\domains\localhost\fullwork\backend\views\layouts\main.php(13): spl_autoload_call('app\\assets\\AppA...')
+#2 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#4 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(backend\controllers\SiteController))
+#5 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#6 C:\OpenServer\domains\localhost\fullwork\backend\controllers\SiteController.php(58): yii\base\Controller->render('index')
+#7 [internal function]: backend\controllers\SiteController->actionIndex()
+#8 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#11 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#12 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OpenServer\domains\localhost\fullwork\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2016-06-15 14:05:23 [127.0.0.1][1][eimispoasm7p5aon1i02qc7l45][info][application] $_COOKIE = [
+    'PHPSESSID' => 'eimispoasm7p5aon1i02qc7l45'
+    '_csrf' => '06d2bc3e364005903ce86f7fa4747b4da60cfeec8449313283d1e85fb54b032fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"j-9J4fO8KY6A6pJu5kdOH2tN3yk5iXdo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=eimispoasm7p5aon1i02qc7l45; _csrf=06d2bc3e364005903ce86f7fa4747b4da60cfeec8449313283d1e85fb54b032fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22j-9J4fO8KY6A6pJu5kdOH2tN3yk5iXdo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '13694'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/index.php'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465988723.12
+    'REQUEST_TIME' => 1465988723
+    'argv' => []
+    'argc' => 0
+]
+2016-06-15 14:05:43 [127.0.0.1][1][eimispoasm7p5aon1i02qc7l45][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot use backend\assets\AppAsset as AppAsset because the name is already in use' in C:\OpenServer\domains\localhost\fullwork\backend\views\layouts\main.php:7
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-15 14:05:43 [127.0.0.1][1][eimispoasm7p5aon1i02qc7l45][info][application] $_COOKIE = [
+    'PHPSESSID' => 'eimispoasm7p5aon1i02qc7l45'
+    '_csrf' => '06d2bc3e364005903ce86f7fa4747b4da60cfeec8449313283d1e85fb54b032fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"j-9J4fO8KY6A6pJu5kdOH2tN3yk5iXdo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=eimispoasm7p5aon1i02qc7l45; _csrf=06d2bc3e364005903ce86f7fa4747b4da60cfeec8449313283d1e85fb54b032fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22j-9J4fO8KY6A6pJu5kdOH2tN3yk5iXdo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '13698'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/index.php'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465988743.647
+    'REQUEST_TIME' => 1465988743
+    'argv' => []
+    'argc' => 0
+]
+2016-06-15 14:45:43 [127.0.0.1][1][eimispoasm7p5aon1i02qc7l45][error][ReflectionException] exception 'ReflectionException' with message 'Class cornernote\yii2-ace\web\AceAsset does not exist' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('cornernote\\yii2...')
+#1 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('cornernote\\yii2...')
+#2 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('cornernote\\yii2...', Array, Array)
+#3 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('cornernote\\yii2...', Array, Array)
+#4 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\AssetManager.php(264): yii\BaseYii::createObject(Array)
+#5 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('cornernote\\yii2...', Array, true)
+#6 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('cornernote\\yii2...')
+#7 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('cornernote\\yii2...', NULL)
+#8 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('backend\\assets\\...')
+#9 C:\OpenServer\domains\localhost\fullwork\backend\views\layouts\main.php(9): yii\web\AssetBundle::register(Object(yii\web\View))
+#10 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#11 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#12 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(backend\controllers\SiteController))
+#13 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#14 C:\OpenServer\domains\localhost\fullwork\backend\controllers\SiteController.php(58): yii\base\Controller->render('index')
+#15 [internal function]: backend\controllers\SiteController->actionIndex()
+#16 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#19 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#20 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\OpenServer\domains\localhost\fullwork\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 14:45:43 [127.0.0.1][1][eimispoasm7p5aon1i02qc7l45][info][application] $_COOKIE = [
+    'PHPSESSID' => 'eimispoasm7p5aon1i02qc7l45'
+    '_csrf' => '7742ccd85e67eddc7e9e1bc4cd0b139a559c7289a87306ee0f5ffcf0452f1461a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"RwbXFmhyHsG0nznpnt7SfhPG7MRD6ELF\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:46.0) Gecko/20100101 Firefox/46.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=eimispoasm7p5aon1i02qc7l45; _csrf=7742ccd85e67eddc7e9e1bc4cd0b139a559c7289a87306ee0f5ffcf0452f1461a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22RwbXFmhyHsG0nznpnt7SfhPG7MRD6ELF%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '13922'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/index.php'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465991143.7
+    'REQUEST_TIME' => 1465991143
+    'argv' => []
+    'argc' => 0
+]
+2016-06-16 13:37:09 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][error][ReflectionException] exception 'ReflectionException' with message 'Class cornernote\ace\web\AcesAsset does not exist' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('cornernote\\ace\\...')
+#1 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('cornernote\\ace\\...')
+#2 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('cornernote\\ace\\...', Array, Array)
+#3 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('cornernote\\ace\\...', Array, Array)
+#4 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\AssetManager.php(264): yii\BaseYii::createObject(Array)
+#5 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('cornernote\\ace\\...', Array, true)
+#6 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('cornernote\\ace\\...')
+#7 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('cornernote\\ace\\...', NULL)
+#8 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('backend\\assets\\...')
+#9 C:\OpenServer\domains\localhost\fullwork\backend\views\layouts\main.php(9): yii\web\AssetBundle::register(Object(yii\web\View))
+#10 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#11 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#12 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(backend\controllers\SiteController))
+#13 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#14 C:\OpenServer\domains\localhost\fullwork\backend\controllers\SiteController.php(58): yii\base\Controller->render('index')
+#15 [internal function]: backend\controllers\SiteController->actionIndex()
+#16 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#19 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#20 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\OpenServer\domains\localhost\fullwork\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-16 13:37:09 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qta5b6vc0ck59f5lgdu7aece83'
+    '_csrf' => '87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q\";}'
+    '_identity' => 'd323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fullwork/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=qta5b6vc0ck59f5lgdu7aece83; _csrf=87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q%22%3B%7D; _identity=d323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '39222'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466073429.531
+    'REQUEST_TIME' => 1466073429
+    'argv' => []
+    'argc' => 0
+]
+2016-06-16 13:40:01 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'cornernote\ace\web\AceAsset' not found' in C:\OpenServer\domains\localhost\fullwork\vendor\cornernote\yii2-ace\src\views\layouts\main.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-16 13:40:01 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qta5b6vc0ck59f5lgdu7aece83'
+    '_csrf' => '87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q\";}'
+    '_identity' => 'd323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fullwork/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=qta5b6vc0ck59f5lgdu7aece83; _csrf=87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q%22%3B%7D; _identity=d323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '39225'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466073601.211
+    'REQUEST_TIME' => 1466073601
+    'argv' => []
+    'argc' => 0
+]
+2016-06-16 13:41:12 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'AcesAsset' not found' in C:\OpenServer\domains\localhost\fullwork\vendor\cornernote\yii2-ace\src\views\layouts\main.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-16 13:41:12 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qta5b6vc0ck59f5lgdu7aece83'
+    '_csrf' => '87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q\";}'
+    '_identity' => 'd323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fullwork/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=qta5b6vc0ck59f5lgdu7aece83; _csrf=87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q%22%3B%7D; _identity=d323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '39230'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466073672.392
+    'REQUEST_TIME' => 1466073672
+    'argv' => []
+    'argc' => 0
+]
+2016-06-16 13:41:15 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'AcesAsset' not found' in C:\OpenServer\domains\localhost\fullwork\vendor\cornernote\yii2-ace\src\views\layouts\main.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-16 13:41:15 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qta5b6vc0ck59f5lgdu7aece83'
+    '_csrf' => '87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q\";}'
+    '_identity' => 'd323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fullwork/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=qta5b6vc0ck59f5lgdu7aece83; _csrf=87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q%22%3B%7D; _identity=d323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '39232'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466073675.411
+    'REQUEST_TIME' => 1466073675
+    'argv' => []
+    'argc' => 0
+]
+2016-06-16 13:41:20 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'AcesAsset' not found' in C:\OpenServer\domains\localhost\fullwork\vendor\cornernote\yii2-ace\src\views\layouts\main.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-16 13:41:20 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qta5b6vc0ck59f5lgdu7aece83'
+    '_csrf' => '87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q\";}'
+    '_identity' => 'd323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fullwork/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=qta5b6vc0ck59f5lgdu7aece83; _csrf=87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q%22%3B%7D; _identity=d323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '39234'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466073680.843
+    'REQUEST_TIME' => 1466073680
+    'argv' => []
+    'argc' => 0
+]
+2016-06-16 13:44:14 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'AcesAsset' not found' in C:\OpenServer\domains\localhost\fullwork\vendor\cornernote\yii2-ace\src\views\layouts\main.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-16 13:44:14 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qta5b6vc0ck59f5lgdu7aece83'
+    '_csrf' => '87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q\";}'
+    '_identity' => 'd323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fullwork/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=qta5b6vc0ck59f5lgdu7aece83; _csrf=87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q%22%3B%7D; _identity=d323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '39242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466073854.266
+    'REQUEST_TIME' => 1466073854
+    'argv' => []
+    'argc' => 0
+]
+2016-06-16 13:46:15 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'cornernote\ace\web\AceAsset' not found' in C:\OpenServer\domains\localhost\fullwork\vendor\cornernote\yii2-ace\src\views\layouts\main.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-16 13:46:15 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qta5b6vc0ck59f5lgdu7aece83'
+    '_csrf' => '87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q\";}'
+    '_identity' => 'd323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fullwork/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=qta5b6vc0ck59f5lgdu7aece83; _csrf=87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q%22%3B%7D; _identity=d323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '39244'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466073975.204
+    'REQUEST_TIME' => 1466073975
+    'argv' => []
+    'argc' => 0
+]
+2016-06-16 13:46:39 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'AcesAsset' not found' in C:\OpenServer\domains\localhost\fullwork\vendor\cornernote\yii2-ace\src\views\layouts\main.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-16 13:46:39 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qta5b6vc0ck59f5lgdu7aece83'
+    '_csrf' => '87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q\";}'
+    '_identity' => 'd323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fullwork/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=qta5b6vc0ck59f5lgdu7aece83; _csrf=87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q%22%3B%7D; _identity=d323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '39246'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466073999.482
+    'REQUEST_TIME' => 1466073999
+    'argv' => []
+    'argc' => 0
+]
+2016-06-16 13:52:49 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][error][ReflectionException] exception 'ReflectionException' with message 'Class cornernote\ace\web\AceAsset does not exist' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php:417
+Stack trace:
+#0 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->__construct('cornernote\\ace\\...')
+#1 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php(360): yii\di\Container->getDependencies('cornernote\\ace\\...')
+#2 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('cornernote\\ace\\...', Array, Array)
+#3 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('cornernote\\ace\\...', Array, Array)
+#4 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\AssetManager.php(264): yii\BaseYii::createObject(Array)
+#5 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('cornernote\\ace\\...', Array, true)
+#6 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('cornernote\\ace\\...')
+#7 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('cornernote\\ace\\...', NULL)
+#8 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\AssetBundle.php(123): yii\web\View->registerAssetBundle('backend\\assets\\...')
+#9 C:\OpenServer\domains\localhost\fullwork\backend\views\layouts\main.php(9): yii\web\AssetBundle::register(Object(yii\web\View))
+#10 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#11 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#12 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(backend\controllers\SiteController))
+#13 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#14 C:\OpenServer\domains\localhost\fullwork\backend\controllers\SiteController.php(58): yii\base\Controller->render('index')
+#15 [internal function]: backend\controllers\SiteController->actionIndex()
+#16 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#19 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#20 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\OpenServer\domains\localhost\fullwork\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-16 13:52:49 [127.0.0.1][1][qta5b6vc0ck59f5lgdu7aece83][info][application] $_COOKIE = [
+    'PHPSESSID' => 'qta5b6vc0ck59f5lgdu7aece83'
+    '_csrf' => '87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q\";}'
+    '_identity' => 'd323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fullwork/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fullwork/backend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=qta5b6vc0ck59f5lgdu7aece83; _csrf=87388e1e84b70a5b8077813bd19e318f26ab0d1d73d448d677e1b167d2b696baa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oxFU303YmyNXFuZ69bXOVSZ3e3qn_p1q%22%3B%7D; _identity=d323e03bd9169cf7401e0933f27565cbcbe4c65d160cc100630675c28e880bc3a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PxJD7y90Xgy-0M0Yg_R0JCRDCm81Enas%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/backend/web/index.php'
+    'REMOTE_PORT' => '39321'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fullwork/backend/web/'
+    'SCRIPT_NAME' => '/fullwork/backend/web/index.php'
+    'PHP_SELF' => '/fullwork/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466074369.344
+    'REQUEST_TIME' => 1466074369
+    'argv' => []
+    'argc' => 0
+]
