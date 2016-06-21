@@ -43,7 +43,7 @@ AppAsset::register($this);
     <div class="container">
         <div class="row">
             <?= $this->render($viewContent, ['content' => $content]) ?>
-            <?= $this->render($viewSidebar) ?>
+            <?//= $this->render($viewSidebar) ?>
         </div>
     </div>
 </div>

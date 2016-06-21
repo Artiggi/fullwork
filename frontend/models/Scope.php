@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace frontend\models;
 
 use Yii;
 
@@ -29,6 +29,11 @@ class Scope extends \yii\db\ActiveRecord
             [['scope'], 'required'],
             [['scope'], 'string', 'max' => 255],
         ];
+    }
+
+    public function getVacancys()
+    {
+        return $this->hasOne(Scope::className(), ['id' => 'scope_id']);
     }
 
     /**

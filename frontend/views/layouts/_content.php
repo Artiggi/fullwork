@@ -3,15 +3,9 @@
                 <!-- BLOG POST -->
                 <div class="home-blog">
                     <div class="full-post">
-                        <div class="post-meta">
-                            <span class="post-author">Lesly Quintella</span>
-                            <span class="post-tags"><a href="#">Search Engine Optimization</a></span>
-                        </div>
-                        <h4><a href="blog.html">8 Essential Tools to Simplify SEO for Content Marketing</a></h4>
-                        <p>Finding a real star requires going beyond "Tell me about yourself." Here are the questions that will tell you what you really want to know.</p>
-                    <?= $content ?>
+                        <?= $content ?>
                     </div>
-
+                    
                     
                     
                     <div class="sep"></div>

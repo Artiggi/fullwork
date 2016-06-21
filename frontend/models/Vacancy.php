@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace frontend\models;
 
 use Yii;
 
@@ -18,6 +18,7 @@ use Yii;
  * @property integer $skill_id
  * @property integer $jobtime_id
  * @property integer $city_id
+ * @property integer $mtop
  */
 class Vacancy extends \yii\db\ActiveRecord
 {
@@ -38,7 +39,7 @@ class Vacancy extends \yii\db\ActiveRecord
             [['title', 'text', 'date', 'employer_id', 'scope_id', 'skill_id', 'jobtime_id', 'city_id'], 'required'],
             [['text'], 'string'],
             [['date'], 'safe'],
-            [['minprice', 'maxprice', 'employer_id', 'scope_id', 'skill_id', 'jobtime_id', 'city_id'], 'integer'],
+            [['minprice', 'maxprice', 'employer_id', 'scope_id', 'skill_id', 'jobtime_id', 'city_id', 'mtop'], 'integer'],
             [['title'], 'string', 'max' => 255],
         ];
     }
@@ -46,6 +47,12 @@ class Vacancy extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    
+    public function getScopes()
+    {
+        return $this->hasOne(Scope::className(), ['scope_id' => 'id']);
+    }      
+
     public function attributeLabels()
     {
         return [
@@ -56,10 +63,11 @@ class Vacancy extends \yii\db\ActiveRecord
             'minprice' => 'Minprice',
             'maxprice' => 'Maxprice',
             'employer_id' => 'Employer ID',
-            'scope_id' => 'Scope ID',
+            //'scope_id' => 'Scope ID',
             'skill_id' => 'Skill ID',
             'jobtime_id' => 'Jobtime ID',
             'city_id' => 'City ID',
+            'mtop' => 'Mtop',
         ];
     }
 }
