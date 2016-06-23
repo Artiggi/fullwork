@@ -33,7 +33,7 @@ class Scope extends \yii\db\ActiveRecord
 
     public function getVacancys()
     {
-        return $this->hasOne(Scope::className(), ['id' => 'scope_id']);
+        return $this->hasMany(Vacancy::className(), ['id' => 'scope_id']);
     }
 
     /**

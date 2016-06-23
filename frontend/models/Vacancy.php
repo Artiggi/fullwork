@@ -48,10 +48,17 @@ class Vacancy extends \yii\db\ActiveRecord
      * @inheritdoc
      */
     
-    public function getScopes()
+    public function getScope()
     {
         return $this->hasOne(Scope::className(), ['scope_id' => 'id']);
-    }      
+    }    
+
+    public function getCity()
+    {
+        return $this->hasOne(Cities::className(), ['city_id' => 'id']);
+    }   
+
+
 
     public function attributeLabels()
     {

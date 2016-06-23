@@ -3,7 +3,8 @@
 namespace frontend\controllers;
 
 use Yii;
-use frontend\models\scope;
+use frontend\models\Cities;
+use frontend\models\Scope;
 use frontend\models\Vacancy;
 use frontend\models\VacancySearch;
 use yii\web\Controller;
@@ -44,20 +45,19 @@ class VacancyController extends Controller
             ->asArray()
             ->all();
 
-        $vacancy = new Vacancy();
-        if ($vacancy->load(Yii::$app->request->post()))
-        {
-            //$vacancy->scope_id = $scope->id;
-            if ($vacancy->save()){
-                $vacancy = new Vacancy();
-            }
-            else {
-            var_dump($vacancy->getErrors());
-            }
-        }
+        $city = new Cities;
+        $cityItems = $city->find()
+            ->select(['concat (city, ", ", state) as value', 'concat (city, ", ", state) as label', 'id as id'])
+            ->where(['<', 'country_id', '5'])
+            ->asArray()
+            ->all();
 
-        
-        
+        $vacancy = new Vacancy();
+        if ($vacancy->load(Yii::$app->request->post()) && $vacancy->save())
+        {
+            $vacancy = new Vacancy();
+        }
+    
         /*
         $scopes = $vacancy->getScopes()->all();
         $scopeItems = ArrayHelper::map($scopes, 'scope', 'scope');
@@ -70,7 +70,9 @@ class VacancyController extends Controller
             'dataProvider' => $dataProvider,
             'vacancy' => $vacancy,
             'scopeItems' => $scopeItems,
-            'scope' => $scope
+            'scope' => $scope,
+            'city' => $city,
+            'cityItems' => $cityItems,
         ]);
     }
 

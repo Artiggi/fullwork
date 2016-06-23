@@ -27,7 +27,7 @@ use yii\web\JsExpression;
     <?php $form = ActiveForm::begin(); ?>
     <?= $form->field($vacancy, 'title')->textInput(['maxlength' => true]) ?>
     <?= $form->field($vacancy, 'text')->textarea(['rows' => 6]) ?>
-    <?= $form->field($vacancy, 'date')->widget(DatePicker::className(),['dateFormat' => 'dd-MM-yy', 'language' => 'ru']) ?>
+    <?= $form->field($vacancy, 'date')->hiddenInput(['value' => date('Y-m-d')])->label(false, ['style'=>'display:none']) ?>
     <?= $form->field($vacancy, 'minprice')->textInput() ?>
     <?= $form->field($vacancy, 'maxprice')->textInput() ?>
     <?= $form->field($vacancy, 'employer_id')->textInput() ?>
@@ -36,11 +36,27 @@ use yii\web\JsExpression;
     'source' => $scopeItems,
     'minLength'=>'2', 
     'options' => ['class' => 'form-control'],
+    'select' => new JsExpression("function( event, ui ) {
+                    $('#vacancy-scope_id').val(ui.item.id);}"),
     ]]) ?>
+    <?= $form->field($vacancy, 'scope_id')->hiddenInput()->label(false, ['style'=>'display:none']) ?>
     <?= $form->field($vacancy, 'skill_id')->textInput() ?>
     <?= $form->field($vacancy, 'jobtime_id')->textInput() ?>
-    <?= $form->field($vacancy, 'city_id')->textInput() ?>
-    <?= $form->field($vacancy, 'mtop')->textInput() ?>
+
+    
+
+    <?= $form->field($city, 'city')->widget(AutoComplete::className(), [
+    'clientOptions' => [
+    'source' => $cityItems,
+    'minLength'=>'3', 
+    'options' => ['class' => 'form-control'],
+    'select' => new JsExpression("function( event, ui ) {
+                    $('#vacancy-city_id').val(ui.item.id);}"),
+    ]]) ?>
+
+    <?= $form->field($vacancy, 'city_id')->hiddenInput()->label(false, ['style'=>'display:none']) ?>
+    
+    <?= $form->field($vacancy, 'mtop')->hiddenInput(['value' => 0])->label(false, ['style'=>'display:none']) ?>
     <div class="form-group">
         <?= Html::submitButton($vacancy->isNewRecord ? 'Create' : 'Update', ['class' => $vacancy->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

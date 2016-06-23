@@ -5728,3 +5728,499 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2016-06-23 11:18:55 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'date() expects at least 1 parameter, 0 given' in C:\OpenServer\domains\localhost\fullwork\frontend\views\vacancy\_form.php:30
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'date() expects ...', 'C:\\OpenServer\\d...', 30, Array)
+#1 C:\OpenServer\domains\localhost\fullwork\frontend\views\vacancy\_form.php(30): date()
+#2 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#4 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, NULL)
+#5 C:\OpenServer\domains\localhost\fullwork\frontend\views\vacancy\index.php(20): yii\base\View->render('_form', Array)
+#6 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(325): require('C:\\OpenServer\\d...')
+#7 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\OpenServer\\d...', Array)
+#8 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\OpenServer\\d...', Array, Object(frontend\controllers\VacancyController))
+#9 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(frontend\controllers\VacancyController))
+#10 C:\OpenServer\domains\localhost\fullwork\frontend\controllers\VacancyController.php(66): yii\base\Controller->render('index', Array)
+#11 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#12 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#15 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('vacancy/index', Array)
+#16 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OpenServer\domains\localhost\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#18 {main}
+2016-06-23 11:18:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '23929'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466669935.012
+    'REQUEST_TIME' => 1466669935
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
+2016-06-23 13:00:49 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\Cities' not found' in C:\OpenServer\domains\localhost\fullwork\frontend\controllers\VacancyController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-23 13:00:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26819'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466676049.676
+    'REQUEST_TIME' => 1466676049
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
+2016-06-23 13:01:03 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\Cities' not found' in C:\OpenServer\domains\localhost\fullwork\frontend\controllers\VacancyController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-23 13:01:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26821'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466676063.653
+    'REQUEST_TIME' => 1466676063
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
+2016-06-23 13:01:53 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Out of memory (allocated 849346560) (tried to allocate 65011732 bytes)' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\helpers\BaseJson.php:59
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-23 13:01:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26823'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466676101.298
+    'REQUEST_TIME' => 1466676101
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
+2016-06-23 13:02:07 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Out of memory (allocated 844627968) (tried to allocate 71344008 bytes)' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\View.php:565
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-23 13:01:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26825'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466676111.115
+    'REQUEST_TIME' => 1466676111
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
+2016-06-23 13:02:24 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Out of memory (allocated 916193280) (tried to allocate 71344993 bytes)' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\View.php:574
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-23 13:02:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26827'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466676129.723
+    'REQUEST_TIME' => 1466676129
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
+2016-06-23 13:08:43 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Out of memory (allocated 916193280) (tried to allocate 71344993 bytes)' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\View.php:574
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-23 13:08:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26941'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466676509.003
+    'REQUEST_TIME' => 1466676509
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
+2016-06-23 13:11:44 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Out of memory (allocated 916193280) (tried to allocate 71344993 bytes)' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\View.php:574
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-23 13:11:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26964'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466676689.706
+    'REQUEST_TIME' => 1466676689
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
+2016-06-23 13:18:54 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'country_id' in 'where clause'' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 C:\OpenServer\domains\localhost\fullwork\frontend\controllers\VacancyController.php(47): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#6 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OpenServer\domains\localhost\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'country_id' in 'where clause'
+The SQL being executed was: SELECT `scope` AS `value`, `scope` AS `label`, `id` AS `id` FROM `scope` WHERE `country_id` < '5'' in C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT `scope` ...')
+#1 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 C:\OpenServer\domains\localhost\fullwork\frontend\controllers\VacancyController.php(47): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#6 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 C:\OpenServer\domains\localhost\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\OpenServer\domains\localhost\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'country_id' in 'where clause'
+)
+
+2016-06-23 13:18:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_csrf' => 'a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=a5f6747d048e3995e4f9331d18370d71b9d01419c7cc3b40fd500882630aad96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22IVbjSO1_ZXBBuNCBY_2JE5XmBr-mCd9S%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP-5.4\\ext;c:\\openserver\\modules\\php\\PHP-5.4\\pear;c:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP-5.4;c:\\openserver\\modules\\imagemagick;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\git;c:\\openserver\\modules\\git\\bin;c:\\openserver\\modules\\git\\mingw\\bin;c:\\openserver\\modules\\git\\cmd;c:\\openserver\\modules\\database\\MySQL-5.5\\bin;c:\\openserver\\modules\\http\\Apache-2.2\\bin;c:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/localhost/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26999'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466677134.1
+    'REQUEST_TIME' => 1466677134
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
