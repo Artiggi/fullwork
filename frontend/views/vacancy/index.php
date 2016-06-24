@@ -17,8 +17,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'vacancy' => $vacancy,
         'scope' => $scope,
         'scopeItems' => $scopeItems,
+        'location' => $location,
+        'locationItems' => $locationItems,
         'city' => $city,
-        'cityItems' => $cityItems,
     ]) ?>
 
 <?php Pjax::begin(); ?>    
