@@ -18,7 +18,14 @@ use yii\web\JsExpression;
         $("#new_vacancy").on("pjax:end", function() {
             $.pjax.reload({container:"#vacancy"});  //Reload GridView
         });
-    });'
+        
+        $.ui.autocomplete.filter = function (array, term) {
+            var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+            return $.grep(array, function (value) {
+                return matcher.test(value.label || value.value || value);
+            });}; //поиск сначала
+    });
+    '
         );
 ?>
 

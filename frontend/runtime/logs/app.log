@@ -6224,3 +6224,343 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2016-06-23 16:44:54 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fullwork.cities' doesn't exist' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\VacancyController.php(53): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fullwork.cities' doesn't exist
+The SQL being executed was: SELECT concat (city, ", ", state) as value, concat (city, ", ", state) as label, `id` AS `id` FROM `cities` WHERE `country_id` < '5'' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT concat (...')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\VacancyController.php(53): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'fullwork.cities' doesn't exist
+)
+
+2016-06-23 16:44:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '24240'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466689494.049
+    'REQUEST_TIME' => 1466689494
+    'argv' => [
+        0 => 'r=vacancy'
+    ]
+    'argc' => 1
+]
+2016-06-23 19:44:35 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fullwork.cities' doesn't exist' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\VacancyController.php(53): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fullwork.cities' doesn't exist
+The SQL being executed was: SELECT concat (city, ", ", state) as value, concat (city, ", ", state) as label, `id` AS `id` FROM `cities` WHERE `country_id` < '5'' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT concat (...')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\VacancyController.php(53): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'fullwork.cities' doesn't exist
+)
+
+2016-06-23 19:44:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '15646'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466700275.224
+    'REQUEST_TIME' => 1466700275
+    'argv' => [
+        0 => 'r=vacancy'
+    ]
+    'argc' => 1
+]
+2016-06-23 20:43:47 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\VacancySearch::mtop' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('mtop')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\validators\Validator.php(249): yii\db\BaseActiveRecord->__get('mtop')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\VacancySearch), Array)
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\models\VacancySearch.php(54): yii\base\Model->validate()
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\VacancyController.php(66): frontend\models\VacancySearch->search(Array)
+#5 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('vacancy', Array)
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2016-06-23 20:43:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy'
+]
+
+$_COOKIE = [
+    '_csrf' => '28cca0a803486032cb5537e73c2dabacf52b9dde6bedc469b313c28e2e6b831ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxYAGsuWAn7Y_obWk-9rmKiDJ35GZekr\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=28cca0a803486032cb5537e73c2dabacf52b9dde6bedc469b313c28e2e6b831ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxYAGsuWAn7Y_obWk-9rmKiDJ35GZekr%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '15835'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466703826.365
+    'REQUEST_TIME' => 1466703826
+    'argv' => [
+        0 => 'r=vacancy'
+    ]
+    'argc' => 1
+]
+2016-06-23 20:44:09 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\VacancySearch::mtop' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('mtop')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\validators\Validator.php(249): yii\db\BaseActiveRecord->__get('mtop')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\VacancySearch), Array)
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\models\VacancySearch.php(54): yii\base\Model->validate()
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\VacancyController.php(66): frontend\models\VacancySearch->search(Array)
+#5 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('vacancy', Array)
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2016-06-23 20:44:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy'
+]
+
+$_COOKIE = [
+    '_csrf' => '28cca0a803486032cb5537e73c2dabacf52b9dde6bedc469b313c28e2e6b831ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxYAGsuWAn7Y_obWk-9rmKiDJ35GZekr\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=28cca0a803486032cb5537e73c2dabacf52b9dde6bedc469b313c28e2e6b831ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxYAGsuWAn7Y_obWk-9rmKiDJ35GZekr%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '15840'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466703848.972
+    'REQUEST_TIME' => 1466703848
+    'argv' => [
+        0 => 'r=vacancy'
+    ]
+    'argc' => 1
+]
+2016-06-23 20:45:54 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\VacancySearch::mtop' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('mtop')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\validators\Validator.php(249): yii\db\BaseActiveRecord->__get('mtop')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\VacancySearch), Array)
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\models\VacancySearch.php(54): yii\base\Model->validate()
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\VacancyController.php(66): frontend\models\VacancySearch->search(Array)
+#5 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('vacancy', Array)
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2016-06-23 20:45:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'vacancy'
+]
+
+$_COOKIE = [
+    '_csrf' => '28cca0a803486032cb5537e73c2dabacf52b9dde6bedc469b313c28e2e6b831ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UxYAGsuWAn7Y_obWk-9rmKiDJ35GZekr\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=28cca0a803486032cb5537e73c2dabacf52b9dde6bedc469b313c28e2e6b831ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UxYAGsuWAn7Y_obWk-9rmKiDJ35GZekr%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '15847'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466703953.958
+    'REQUEST_TIME' => 1466703953
+    'argv' => [
+        0 => 'r=vacancy'
+    ]
+    'argc' => 1
+]
