@@ -38,23 +38,18 @@ use yii\web\JsExpression;
     <?= $form->field($vacancy, 'minprice')->textInput() ?>
     <?= $form->field($vacancy, 'maxprice')->textInput() ?>
     <?= $form->field($vacancy, 'employer_id')->textInput() ?>
-    <?= $form->field($scope, 'scope')->widget(AutoComplete::className(), [
-    'clientOptions' => [
-    'source' => $scopeItems,
-    'minLength'=>'2', 
-    'options' => ['class' => 'form-control'],
-    'select' => new JsExpression("function( event, ui ) {
-                    $('#vacancy-scope_id').val(ui.item.id);}"),
-    ]]) ?>
-    <?= $form->field($vacancy, 'scope_id')->hiddenInput()->label(false, ['style'=>'display:none']) ?>
+
+    <? foreach ($scopeItems as $key=>$value) {
+        print_r($value[value]);
+    }?>
+    <?//= $form->field($vacancy, 'scope_id')->checkboxList($scopeItems);?>
+
+
     <?= $form->field($vacancy, 'skill_id')->textInput() ?>
-    <?= $form->field($vacancy, 'jobtime_id')->textInput() ?>
-
-    
-
+    <?= $form->field($vacancy, 'jobtime_id')->textInput() ?>  
     <?= $form->field($city, 'city')->widget(AutoComplete::className(), [
     'clientOptions' => [
-    'source' => $cityItems,
+    'source' => $locationItems,
     'minLength'=>'3', 
     'options' => ['class' => 'form-control'],
     'select' => new JsExpression("function( event, ui ) {
