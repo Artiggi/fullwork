@@ -6,6 +6,10 @@ use yii\widgets\Pjax;
 use yii\jui\AutoComplete;
 use yii\jui\DatePicker;
 use yii\web\JsExpression;
+use frontend\models\Scope;
+use yii\helpers\ArrayHelper;
+use yii\helpers\Url;
+use sjaakp\taggable\TagEditor;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Vacancy */
@@ -38,15 +42,24 @@ use yii\web\JsExpression;
     <?= $form->field($vacancy, 'minprice')->textInput() ?>
     <?= $form->field($vacancy, 'maxprice')->textInput() ?>
     <?= $form->field($vacancy, 'employer_id')->textInput() ?>
-
-    <? foreach ($scopeItems as $key=>$value) {
-        print_r($value[value]);
-    }?>
-    <?//= $form->field($vacancy, 'scope_id')->checkboxList($scopeItems);?>
+    <?= $form->field($vacancy, 'scope_id')->radioList($scopeItems);?>
 
 
-    <?= $form->field($vacancy, 'skill_id')->textInput() ?>
-    <?= $form->field($vacancy, 'jobtime_id')->textInput() ?>  
+    <?= $form->field($vacancy, 'editorTags')->widget(TagEditor::className(), [
+        'tagEditorOptions' => [
+            'autocomplete' => [
+                'source' => Url::toRoute(['tag/suggest'])
+            ],
+        ]
+    ]) ?>
+
+
+    <?= $form->field($vacancy, 'jobtime_id')->dropDownList(
+        [
+        '1' => 'Полная занятость',
+        '2' => 'Частичная занятость'
+        ]
+    ) ?> 
     <?= $form->field($city, 'city')->widget(AutoComplete::className(), [
     'clientOptions' => [
     'source' => $locationItems,
@@ -55,9 +68,7 @@ use yii\web\JsExpression;
     'select' => new JsExpression("function( event, ui ) {
                     $('#vacancy-city_id').val(ui.item.id);}"),
     ]]) ?>
-
     <?= $form->field($vacancy, 'city_id')->hiddenInput()->label(false, ['style'=>'display:none']) ?>
-    
     <?= $form->field($vacancy, 'mtop')->hiddenInput(['value' => 0])->label(false, ['style'=>'display:none']) ?>
     <div class="form-group">
         <?= Html::submitButton($vacancy->isNewRecord ? 'Create' : 'Update', ['class' => $vacancy->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

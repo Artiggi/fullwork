@@ -8,10 +8,12 @@ use frontend\models\Location;
 use frontend\models\Scope;
 use frontend\models\Vacancy;
 use frontend\models\VacancySearch;
+use frontend\models\Tag;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\helpers\ArrayHelper;
+
 
 
 /**
@@ -47,15 +49,21 @@ class VacancyController extends Controller
             ->all();
         $city = new Cities;
         $vacancy = new Vacancy();
-        $scope = new Scope;
-        $scopeItems = $scope->find()
-            ->select(['scope as value', 'id as id'])
-            ->asArray()
+        $scope = Scope::find()->all();
+        $scopeItems = ArrayHelper::map($scope, 'id', 'scope');
+            /*
+            $scope->find()
+            ->select(['scope as scope', 'id as id'])
+            //->asArray()
             ->all();
-        
+            */
         if ($vacancy->load(Yii::$app->request->post()) && $vacancy->save())
         {
             $vacancy = new Vacancy();
+        }
+        else
+        {
+            var_dump($vacancy->getErrors()); 
         }
            
         $searchModel = new VacancySearch();

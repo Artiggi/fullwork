@@ -93,4 +93,22 @@ return array (
       '@yii/jui' => $vendorDir . '/yiisoft/yii2-jui',
     ),
   ),
+  'creocoder/yii2-taggable' => 
+  array (
+    'name' => 'creocoder/yii2-taggable',
+    'version' => '2.0.0.0',
+    'alias' => 
+    array (
+      '@creocoder/taggable' => $vendorDir . '/creocoder/yii2-taggable/src',
+    ),
+  ),
+  'sjaakp/yii2-taggable' => 
+  array (
+    'name' => 'sjaakp/yii2-taggable',
+    'version' => '1.0.2.0',
+    'alias' => 
+    array (
+      '@sjaakp/taggable' => $vendorDir . '/sjaakp/yii2-taggable',
+    ),
+  ),
 );

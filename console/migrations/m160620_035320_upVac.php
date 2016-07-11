@@ -6,7 +6,7 @@ class m160620_035320_upVac extends Migration
 {
     public function up()
     {
-        $this->addColumn('vacancy', 'mtop', $this->integer());
+        //$this->addColumn('vacancy', 'mtop', $this->integer());
     }
 
     public function down()

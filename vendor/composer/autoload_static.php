@@ -24,12 +24,17 @@ class ComposerStaticInit386f8c1d4c9e6ddf629d23ee2f1afc3f
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
+        's' => 
+        array (
+            'sjaakp\\taggable\\' => 16,
+        ),
         'r' => 
         array (
             'rmrevin\\yii\\fontawesome\\' => 24,
         ),
         'c' => 
         array (
+            'creocoder\\taggable\\' => 19,
             'cornernote\\ace\\' => 15,
             'cebe\\markdown\\' => 14,
         ),
@@ -76,9 +81,17 @@ class ComposerStaticInit386f8c1d4c9e6ddf629d23ee2f1afc3f
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
+        'sjaakp\\taggable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sjaakp/yii2-taggable',
+        ),
         'rmrevin\\yii\\fontawesome\\' => 
         array (
             0 => __DIR__ . '/..' . '/rmrevin/yii2-fontawesome',
+        ),
+        'creocoder\\taggable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/creocoder/yii2-taggable/src',
         ),
         'cornernote\\ace\\' => 
         array (
