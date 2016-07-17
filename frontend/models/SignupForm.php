@@ -3,6 +3,7 @@ namespace frontend\models;
 
 use yii\base\Model;
 use common\models\User;
+use frontend\models\Profile;
 
 /**
  * Signup form
@@ -12,6 +13,13 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
+    public $firstName;
+    public $lastName;
+    public $basicSpec;
+    public $addSpec;
+    public $skills;
+    public $avatarUrl;
+    public $company_id;
 
 
     /**
@@ -33,6 +41,12 @@ class SignupForm extends Model
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
+
+            [['firstName', 'lastName'], 'required'],
+            [['basicSpec', 'addSpec', 'company_id'], 'integer'],
+            [['skills'], 'string'],
+            [['firstName', 'lastName', 'avatarUrl'], 'string', 'max' => 255],
+
         ];
     }
 
@@ -54,5 +68,17 @@ class SignupForm extends Model
         $user->generateAuthKey();
         
         return $user->save() ? $user : null;
+
+        $profile = new Profile();
+        $profile->id = $user->id;
+        $profile->firstName = $this->firstName;
+        $profile->lastName = $this->lastName;
+        $profile->basicSpec = $this->basicSpec;
+        $profile->addSpec = $this->addSpec;
+        $profile->skills = $this->skills;
+        $profile->avatarUrl = $this->avatarUrl;
+        $profile->company_id = null;
+
+        return $profile->save() ? $profile : null;
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace frontend\models;
 
 use Yii;
 
@@ -35,7 +35,7 @@ class Profile extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['firstName', 'lastName', 'basicSpec', 'avatarUrl'], 'required'],
+            [['firstName', 'lastName'], 'required'],
             [['basicSpec', 'addSpec', 'company_id'], 'integer'],
             [['skills'], 'string'],
             [['firstName', 'lastName', 'avatarUrl'], 'string', 'max' => 255],

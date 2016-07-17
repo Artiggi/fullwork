@@ -11,6 +11,7 @@ use frontend\models\VacancySearch;
 use frontend\models\Tag;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\helpers\ArrayHelper;
 
@@ -27,7 +28,18 @@ class VacancyController extends Controller
     public function behaviors()
     {
         return [
-            'verbs' => [
+        
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['index'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+           'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     //'delete' => ['POST'],
