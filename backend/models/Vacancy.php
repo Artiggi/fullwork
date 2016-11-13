@@ -51,17 +51,54 @@ class Vacancy extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'text' => 'Text',
-            'date' => 'Date',
-            'minprice' => 'Minprice',
-            'maxprice' => 'Maxprice',
-            'employer_id' => 'Employer ID',
-            'scope_id' => 'Scope ID',
-            'skill_id' => 'Skill ID',
-            'jobtime_id' => 'Jobtime ID',
-            'city_id' => 'City ID',
-            'mtop' => 'Mtop',
+            'title' => 'Заголовок',
+            'text' => 'Текст вакансии',
+            'date' => 'Дата подачи',
+            'minprice' => 'Мин зп',
+            'maxprice' => 'Макс зп',
+            'employer_id' => 'Заказчик',
+            'scope_id' => 'Сфера деятельности',
+            'skill_id' => 'Навыки',
+            'jobtime_id' => 'Вид занятости',
+            'city_id' => 'Город',
+            'mtop' => 'Премиум',
         ];
     }
+
+    public function getScope()
+    {
+        return $this->hasOne(Scope::className(), ['id' => 'scope_id']);
+    }
+
+    public function getScopeValue()
+    {
+        return $this->scope->name;
+    }
+
+    public function getCity()
+    {
+        return $this->hasOne(Cities::className(), ['id' => 'city_id']);
+    }
+
+    public function getCityValue()
+    {
+        return $this->city->city;
+    }
+
+    public function getJobtime()
+    {
+        return $this->hasOne(Jobtime::className(), ['id' => 'jobtime_id']);
+    }
+
+    public function getJobtimeValue()
+    {
+        return $this->jobtime->name;
+    }
+
+    public function getSkills()
+    {
+        return $this->hasMany(Skill::className(), ['vacancy_id' => 'id']);
+    }
+
+
 }

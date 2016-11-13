@@ -10957,3 +10957,1958 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2016-11-09 09:59:01 [127.0.0.1][1][j4b5qmmkjdbl0ku73frijovm76][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('vacancy', Array)
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#5 {main}
+2016-11-09 09:59:01 [127.0.0.1][1][j4b5qmmkjdbl0ku73frijovm76][info][application] $_GET = [
+    'r' => 'vacancy'
+]
+
+$_POST = [
+    '_csrf' => 'V1pfS251by0aFAZ7WxYYSw0tNiI2Rz1vER1sGQskOnsRPz56KRAHag=='
+    'Vacancy' => [
+        'title' => 'Java разработчик'
+        'text' => 'Разработка и поддержка проектов на Java'
+        'date' => '2016-11-09'
+        'minprice' => '30000'
+        'maxprice' => '35000'
+        'employer_id' => '2'
+        'scope_id' => '2'
+        'editorTags' => 'java,backend,developer'
+        'jobtime_id' => '1'
+        'city_id' => '60'
+        'mtop' => '0'
+    ]
+    'Cities' => [
+        'city' => 'Казань'
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'j4b5qmmkjdbl0ku73frijovm76'
+    '_csrf' => 'ec608a753849f39ccbfdfc435610d48842c2f49cc5f05b88f639fffa790a304ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NZFhekZBop5GxsUOJWzIc9Xd7yzybBxC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/?r=vacancy'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=j4b5qmmkjdbl0ku73frijovm76; _csrf=ec608a753849f39ccbfdfc435610d48842c2f49cc5f05b88f639fffa790a304ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NZFhekZBop5GxsUOJWzIc9Xd7yzybBxC%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '699'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '38238'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=vacancy'
+    'REQUEST_URI' => '/fullwork/frontend/web/?r=vacancy'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478674741.267
+    'REQUEST_TIME' => 1478674741
+    'argv' => [
+        0 => 'r=vacancy'
+    ]
+    'argc' => 1
+]
+2016-11-09 09:59:34 [127.0.0.1][1][j4b5qmmkjdbl0ku73frijovm76][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('delete', Array)
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('vacancy/delete', Array)
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-11-09 09:59:34 [127.0.0.1][1][j4b5qmmkjdbl0ku73frijovm76][info][application] $_GET = [
+    'r' => 'vacancy/delete'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'j4b5qmmkjdbl0ku73frijovm76'
+    '_csrf' => '04f4968bf85316f882e7f26ea41556d2727990c1aa76320f92524a89430e0c42a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m9Eul88J2J5ISTKIRlZ1W2uUzrgCH5v9\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/?r=vacancy'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=j4b5qmmkjdbl0ku73frijovm76; _csrf=04f4968bf85316f882e7f26ea41556d2727990c1aa76320f92524a89430e0c42a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m9Eul88J2J5ISTKIRlZ1W2uUzrgCH5v9%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '38246'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Fdelete&id=3'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Fdelete&id=3'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478674774.04
+    'REQUEST_TIME' => 1478674774
+    'argv' => [
+        0 => 'r=vacancy%2Fdelete&id=3'
+    ]
+    'argc' => 1
+]
+2016-11-09 11:27:01 [127.0.0.1][1][j4b5qmmkjdbl0ku73frijovm76][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Scope::scope' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('scope')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(204): yii\db\BaseActiveRecord->__get('scope')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(466): yii\helpers\BaseArrayHelper::getValue(Object(frontend\models\Scope), 'scope')
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\VacancyController.php(65): yii\helpers\BaseArrayHelper::map(Array, 'id', 'scope')
+#4 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('vacancy/index', Array)
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-11-09 11:27:00 [127.0.0.1][1][j4b5qmmkjdbl0ku73frijovm76][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'j4b5qmmkjdbl0ku73frijovm76'
+    '_csrf' => 'ccb617e381d81d67b98b9d97725c691f898f888e80c32d3d21cc9de903d51220a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gJvYOhe8JUs7BLgr1Y20CvAQN_EUIl5y\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=j4b5qmmkjdbl0ku73frijovm76; _csrf=ccb617e381d81d67b98b9d97725c691f898f888e80c32d3d21cc9de903d51220a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gJvYOhe8JUs7BLgr1Y20CvAQN_EUIl5y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '36981'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478680020.783
+    'REQUEST_TIME' => 1478680020
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
+2016-11-09 11:28:25 [127.0.0.1][1][j4b5qmmkjdbl0ku73frijovm76][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Scope::scope' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('scope')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(204): yii\db\BaseActiveRecord->__get('scope')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(466): yii\helpers\BaseArrayHelper::getValue(Object(frontend\models\Scope), 'scope')
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\VacancyController.php(65): yii\helpers\BaseArrayHelper::map(Array, 'id', 'scope')
+#4 [internal function]: frontend\controllers\VacancyController->actionIndex()
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('vacancy/index', Array)
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-11-09 11:28:25 [127.0.0.1][1][j4b5qmmkjdbl0ku73frijovm76][info][application] $_GET = [
+    'r' => 'vacancy/index'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'j4b5qmmkjdbl0ku73frijovm76'
+    '_csrf' => 'ccb617e381d81d67b98b9d97725c691f898f888e80c32d3d21cc9de903d51220a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gJvYOhe8JUs7BLgr1Y20CvAQN_EUIl5y\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=j4b5qmmkjdbl0ku73frijovm76; _csrf=ccb617e381d81d67b98b9d97725c691f898f888e80c32d3d21cc9de903d51220a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gJvYOhe8JUs7BLgr1Y20CvAQN_EUIl5y%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '36984'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vacancy%2Findex'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=vacancy%2Findex'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478680105.101
+    'REQUEST_TIME' => 1478680105
+    'argv' => [
+        0 => 'r=vacancy%2Findex'
+    ]
+    'argc' => 1
+]
+2016-11-09 22:03:02 [127.0.0.1][1][vn5nisbmjtn6ih5etek3lcgo10][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signup', Array)
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-11-09 22:03:02 [127.0.0.1][1][vn5nisbmjtn6ih5etek3lcgo10][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '25986'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/signup'
+    'REQUEST_URI' => '/fullwork/frontend/web/?r=site/signup'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478718182.431
+    'REQUEST_TIME' => 1478718182
+    'argv' => [
+        0 => 'r=site/signup'
+    ]
+    'argc' => 1
+]
+2016-11-09 22:03:57 [127.0.0.1][1][vn5nisbmjtn6ih5etek3lcgo10][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signup', Array)
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2016-11-09 22:03:57 [127.0.0.1][1][vn5nisbmjtn6ih5etek3lcgo10][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '25992'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/signup'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site/signup'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478718237.83
+    'REQUEST_TIME' => 1478718237
+    'argv' => [
+        0 => 'r=site/signup'
+    ]
+    'argc' => 1
+]
+2016-11-09 22:13:14 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Url' not found' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\presignup.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-09 22:13:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/presignup'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26111'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/presignup'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site/presignup'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478718794.51
+    'REQUEST_TIME' => 1478718794
+    'argv' => [
+        0 => 'r=site/presignup'
+    ]
+    'argc' => 1
+]
+2016-11-09 22:18:50 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\presignup.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-09 22:18:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/presignup'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26220'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/presignup'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site/presignup'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478719130.335
+    'REQUEST_TIME' => 1478719130
+    'argv' => [
+        0 => 'r=site/presignup'
+    ]
+    'argc' => 1
+]
+2016-11-09 22:19:01 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\presignup.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-09 22:19:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/presignup'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26221'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/presignup'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site/presignup'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478719141.216
+    'REQUEST_TIME' => 1478719141
+    'argv' => [
+        0 => 'r=site/presignup'
+    ]
+    'argc' => 1
+]
+2016-11-09 22:19:14 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\presignup.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-09 22:19:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/presignup'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26222'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/presignup'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site/presignup'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478719154.342
+    'REQUEST_TIME' => 1478719154
+    'argv' => [
+        0 => 'r=site/presignup'
+    ]
+    'argc' => 1
+]
+2016-11-09 22:21:16 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO)' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\presignup.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-09 22:21:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/presignup'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26232'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/presignup'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site/presignup'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478719276.373
+    'REQUEST_TIME' => 1478719276
+    'argv' => [
+        0 => 'r=site/presignup'
+    ]
+    'argc' => 1
+]
+2016-11-09 22:40:59 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/signup' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signup', Array)
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-09 22:40:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26389'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/signup'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site/signup'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478720459.74
+    'REQUEST_TIME' => 1478720459
+    'argv' => [
+        0 => 'r=site/signup'
+    ]
+    'argc' => 1
+]
+2016-11-09 22:42:29 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?>'' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\layouts\main.php:46
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-09 22:42:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupuser'
+]
+
+$_COOKIE = [
+    '_identity' => 'f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O\",2592000]\";}'
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site/presignup'
+    'HTTP_COOKIE' => '_identity=f2ae0b4dd44e92a43dcfd1d5517862487d1dc1731b646a7cf5b1b87933c407caa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22uZe7xaa0wWxs_b6ds8VzMMwV-YH8153O%22%2C2592000%5D%22%3B%7D; PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '26401'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignupuser'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupuser'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478720549.205
+    'REQUEST_TIME' => 1478720549
+    'argv' => [
+        0 => 'r=site%2Fsignupuser'
+    ]
+    'argc' => 1
+]
+2016-11-09 23:11:14 [127.0.0.1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\models\SignupForm.php(92): yii\db\BaseActiveRecord->save()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(164): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignupuser()
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null
+The SQL being executed was: INSERT INTO `profile` (`id`, `firstName`, `lastName`, `basicSpec`, `addSpec`, `skills`, `avatarUrl`, `company_id`) VALUES (NULL, 'Artem', 'Pogrebnov', 1, 2, 'yii java', 'asdasd', NULL)' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `pr...')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\models\SignupForm.php(92): yii\db\BaseActiveRecord->save()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(164): frontend\models\SignupForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignupuser()
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'id' cannot be null
+)
+
+2016-11-09 23:11:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupuser'
+]
+
+$_POST = [
+    '_csrf' => 'LW11d2YuRVcUODgRCk0nARgYEDZedz8BQVkYRl5sHyFhKhoRCRsPZg=='
+    'SignupForm' => [
+        'username' => 'magista'
+        'email' => 'magista@gmail.com'
+        'password' => 'aa123123'
+        'firstName' => 'Artem'
+        'lastName' => 'Pogrebnov'
+        'basicSpec' => '1'
+        'addSpec' => '2'
+        'skills' => 'yii java'
+        'avatarUrl' => 'asdasd'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site%2Fsignupuser'
+    'HTTP_COOKIE' => 'PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '391'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '3190'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignupuser'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupuser'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478722274.233
+    'REQUEST_TIME' => 1478722274
+    'argv' => [
+        0 => 'r=site%2Fsignupuser'
+    ]
+    'argc' => 1
+]
+2016-11-09 23:12:09 [127.0.0.1][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must implement interface yii\web\IdentityInterface, instance of frontend\models\Profile given, called in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php on line 165 and defined' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\User.php:245
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\User.php(245): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', 'D:\\OpenServer\\O...', 245, Array)
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(165): yii\web\User->login(Object(frontend\models\Profile))
+#2 [internal function]: frontend\controllers\SiteController->actionSignupuser()
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signupuser', Array)
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signupuser', Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-09 23:12:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupuser'
+]
+
+$_POST = [
+    '_csrf' => 'LW11d2YuRVcUODgRCk0nARgYEDZedz8BQVkYRl5sHyFhKhoRCRsPZg=='
+    'SignupForm' => [
+        'username' => 'magista'
+        'email' => 'magista@gmail.com'
+        'password' => 'aa123123'
+        'firstName' => 'Artem'
+        'lastName' => 'Pogrebnov'
+        'basicSpec' => '1'
+        'addSpec' => '2'
+        'skills' => 'yii java'
+        'avatarUrl' => 'asdasd'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site%2Fsignupuser'
+    'HTTP_COOKIE' => 'PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '391'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '3199'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignupuser'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupuser'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478722329.867
+    'REQUEST_TIME' => 1478722329
+    'argv' => [
+        0 => 'r=site%2Fsignupuser'
+    ]
+    'argc' => 1
+]
+2016-11-09 23:12:58 [127.0.0.1][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must implement interface yii\web\IdentityInterface, instance of frontend\models\Profile given, called in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php on line 165 and defined' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\User.php:245
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\User.php(245): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', 'D:\\OpenServer\\O...', 245, Array)
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(165): yii\web\User->login(Object(frontend\models\Profile))
+#2 [internal function]: frontend\controllers\SiteController->actionSignupuser()
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signupuser', Array)
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signupuser', Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-09 23:12:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupuser'
+]
+
+$_POST = [
+    '_csrf' => 'LW11d2YuRVcUODgRCk0nARgYEDZedz8BQVkYRl5sHyFhKhoRCRsPZg=='
+    'SignupForm' => [
+        'username' => 'magista'
+        'email' => 'magista@gmail.com'
+        'password' => 'aa123123'
+        'firstName' => 'Artem'
+        'lastName' => 'Pogrebnov'
+        'basicSpec' => '1'
+        'addSpec' => '2'
+        'skills' => 'yii java'
+        'avatarUrl' => 'asdasd'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vn5nisbmjtn6ih5etek3lcgo10'
+    '_csrf' => 'af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9UMflcbV5ueA8YzVl4m18BZvLGofo5J1\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site%2Fsignupuser'
+    'HTTP_COOKIE' => 'PHPSESSID=vn5nisbmjtn6ih5etek3lcgo10; _csrf=af9f50536240f439aee793f46a98b3813c54155f22cdcabf287578bd9c0848bca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229UMflcbV5ueA8YzVl4m18BZvLGofo5J1%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '391'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '3205'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignupuser'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupuser'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478722378.174
+    'REQUEST_TIME' => 1478722378
+    'argv' => [
+        0 => 'r=site%2Fsignupuser'
+    ]
+    'argc' => 1
+]
+2016-11-11 22:42:07 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/signupempl' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signupempl', Array)
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signupempl', Array)
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2016-11-11 22:42:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupempl'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/?r=site/presignup'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10743'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignupempl'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupempl'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478893327.099
+    'REQUEST_TIME' => 1478893327
+    'argv' => [
+        0 => 'r=site%2Fsignupempl'
+    ]
+    'argc' => 1
+]
+2016-11-11 22:42:17 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\SignupEmpForm' not found' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php:182
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-11 22:42:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupemp'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10743'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignupemp'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478893337.247
+    'REQUEST_TIME' => 1478893337
+    'argv' => [
+        0 => 'r=site%2Fsignupemp'
+    ]
+    'argc' => 1
+]
+2016-11-11 22:48:17 [127.0.0.1][-][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\SignupEmpForm::compname' 
+
+in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\helpers\BaseHtml.php(2033): yii\base\Component->__get('compname')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\helpers\BaseHtml.php(1234): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupEmpForm), 'compname')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\helpers\BaseHtml.php(1283): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\SignupEmpForm), 'compname', Array)
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\widgets\ActiveField.php(367): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\SignupEmpForm), 'compname', Array)
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\widgets\ActiveField.php(193): yii\widgets\ActiveField->textInput()
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\widgets\ActiveField.php(165): yii\bootstrap\ActiveField->render()
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\signupemp.php(38): yii\widgets\ActiveField->__toString()
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(325): require('D:\\OpenServer\\O...')
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\OpenServer\\O...', Array)
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\OpenServer\\O...', Array, Object(frontend\controllers\SiteController))
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('signupemp', Array, Object(frontend\controllers\SiteController))
+#12 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(195): yii\base\Controller->render('signupemp', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionSignupemp()
+#14 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signupemp', Array)
+#17 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signupemp', Array)
+#18 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\widgets\ActiveField.php(167): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\signupemp.php(38): yii\widgets\ActiveField->__toString()
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(325): require('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(195): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: frontend\controllers\SiteController->actionSignupemp()
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+    in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\signupemp.php:38
+    in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php:195
+2016-11-11 22:48:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupemp'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/?r=site/presignup'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10820'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignupemp'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478893697.206
+    'REQUEST_TIME' => 1478893697
+    'argv' => [
+        0 => 'r=site%2Fsignupemp'
+    ]
+    'argc' => 1
+]
+2016-11-11 22:49:08 [127.0.0.1][-][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\SignupEmpForm::compname' 
+
+in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php:143
+
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\helpers\BaseHtml.php(2033): yii\base\Component->__get('compname')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\helpers\BaseHtml.php(1234): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupEmpForm), 'compname')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\helpers\BaseHtml.php(1283): yii\helpers\BaseHtml::activeInput('text', Object(frontend\models\SignupEmpForm), 'compname', Array)
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\widgets\ActiveField.php(367): yii\helpers\BaseHtml::activeTextInput(Object(frontend\models\SignupEmpForm), 'compname', Array)
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\widgets\ActiveField.php(193): yii\widgets\ActiveField->textInput()
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2-bootstrap\ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\widgets\ActiveField.php(165): yii\bootstrap\ActiveField->render()
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\signupemp.php(38): yii\widgets\ActiveField->__toString()
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(325): require('D:\\OpenServer\\O...')
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\OpenServer\\O...', Array)
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\OpenServer\\O...', Array, Object(frontend\controllers\SiteController))
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('signupemp', Array, Object(frontend\controllers\SiteController))
+#12 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(195): yii\base\Controller->render('signupemp', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionSignupemp()
+#14 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signupemp', Array)
+#17 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signupemp', Array)
+#18 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\widgets\ActiveField.php(167): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\signupemp.php(38): yii\widgets\ActiveField->__toString()
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(325): require('D:\\OpenServer\\O...')
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(frontend\controllers\SiteController))
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(195): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: frontend\controllers\SiteController->actionSignupemp()
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#16 {main}
+    in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\views\site\signupemp.php:38
+    in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php:195
+2016-11-11 22:49:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupemp'
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/?r=site/presignup'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10830'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignupemp'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478893748.045
+    'REQUEST_TIME' => 1478893748
+    'argv' => [
+        0 => 'r=site%2Fsignupemp'
+    ]
+    'argc' => 1
+]
+2016-11-11 22:53:47 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Company::save' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\BaseActiveRecord.php(252): yii\base\Component->__get('save')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\models\SignupEmpForm.php(95): yii\db\BaseActiveRecord->__get('save')
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(185): frontend\models\SignupEmpForm->signup()
+#3 [internal function]: frontend\controllers\SiteController->actionSignupemp()
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signupemp', Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signupemp', Array)
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2016-11-11 22:53:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupemp'
+]
+
+$_POST = [
+    '_csrf' => 'MENOZk1hbnVYOgYnfhAHPkoxNzY9UAsqVA4XB3kyJEZIBx4SKAJWNw=='
+    'SignupEmpForm' => [
+        'username' => 'arturpirog'
+        'password' => 'asdasd'
+        'email' => 'asdasdqweqwe@wqe.ee'
+        'compname' => 'GazProm'
+        'comptextInfo' => 'Moja compania top'
+        'compavatarUrl' => 'asdwqeqwe.jpg'
+        'firstName' => 'Artur'
+        'lastName' => 'Pirogov'
+        'basicSpec' => '1'
+        'addSpec' => '2'
+        'skills' => '1'
+        'avatarUrl' => 'dsadw'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+    'PHPSESSID' => 'rs6b6jqqrgg3ms6srsn8gh22u0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D; PHPSESSID=rs6b6jqqrgg3ms6srsn8gh22u0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '544'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10873'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignupemp'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478894027.177
+    'REQUEST_TIME' => 1478894027
+    'argv' => [
+        0 => 'r=site%2Fsignupemp'
+    ]
+    'argc' => 1
+]
+2016-11-11 22:54:08 [127.0.0.1][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must implement interface yii\web\IdentityInterface, instance of frontend\models\Company given, called in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php on line 186 and defined' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\User.php:245
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\User.php(245): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', 'D:\\OpenServer\\O...', 245, Array)
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(186): yii\web\User->login(Object(frontend\models\Company))
+#2 [internal function]: frontend\controllers\SiteController->actionSignupemp()
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signupemp', Array)
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signupemp', Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-11 22:54:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupemp'
+]
+
+$_POST = [
+    '_csrf' => 'MENOZk1hbnVYOgYnfhAHPkoxNzY9UAsqVA4XB3kyJEZIBx4SKAJWNw=='
+    'SignupEmpForm' => [
+        'username' => 'arturpirog'
+        'password' => 'asdasd'
+        'email' => 'asdasdqweqwe@wqe.ee'
+        'compname' => 'GazProm'
+        'comptextInfo' => 'Moja compania top'
+        'compavatarUrl' => 'asdwqeqwe.jpg'
+        'firstName' => 'Artur'
+        'lastName' => 'Pirogov'
+        'basicSpec' => '1'
+        'addSpec' => '2'
+        'skills' => '1'
+        'avatarUrl' => 'dsadw'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+    'PHPSESSID' => 'rs6b6jqqrgg3ms6srsn8gh22u0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D; PHPSESSID=rs6b6jqqrgg3ms6srsn8gh22u0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '544'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10877'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignupemp'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478894048.742
+    'REQUEST_TIME' => 1478894048
+    'argv' => [
+        0 => 'r=site%2Fsignupemp'
+    ]
+    'argc' => 1
+]
+2016-11-11 23:01:49 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\models\SignupEmpForm.php:107
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-11 23:01:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupemp'
+]
+
+$_POST = [
+    '_csrf' => 'MENOZk1hbnVYOgYnfhAHPkoxNzY9UAsqVA4XB3kyJEZIBx4SKAJWNw=='
+    'SignupEmpForm' => [
+        'username' => 'arturpirog'
+        'password' => 'asdasd'
+        'email' => 'asdasdqweqwe@wqe.ee'
+        'compname' => 'GazProm'
+        'comptextInfo' => 'Moja compania top'
+        'compavatarUrl' => 'asdwqeqwe.jpg'
+        'firstName' => 'Artur'
+        'lastName' => 'Pirogov'
+        'basicSpec' => '1'
+        'addSpec' => '2'
+        'skills' => '1'
+        'avatarUrl' => 'dsadw'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+    'PHPSESSID' => 'rs6b6jqqrgg3ms6srsn8gh22u0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D; PHPSESSID=rs6b6jqqrgg3ms6srsn8gh22u0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '544'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10935'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignupemp'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478894509.244
+    'REQUEST_TIME' => 1478894509
+    'argv' => [
+        0 => 'r=site%2Fsignupemp'
+    ]
+    'argc' => 1
+]
+2016-11-11 23:02:47 [127.0.0.1][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must implement interface yii\web\IdentityInterface, instance of frontend\models\Company given, called in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php on line 186 and defined' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\User.php:245
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\User.php(245): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', 'D:\\OpenServer\\O...', 245, Array)
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(186): yii\web\User->login(Object(frontend\models\Company))
+#2 [internal function]: frontend\controllers\SiteController->actionSignupemp()
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signupemp', Array)
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signupemp', Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-11 23:02:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupemp'
+]
+
+$_POST = [
+    '_csrf' => 'Tzg5Qk0uaVQnQXEDfl8AHzVKQBI9HwwLK3VgI3l9I2c3fGk2KE1RFg=='
+    'SignupEmpForm' => [
+        'username' => 'arturpirog'
+        'password' => 'asdasdasd'
+        'email' => 'asdasdqweqwe@wqe.ee'
+        'compname' => 'GazProm'
+        'comptextInfo' => 'Moja compania top'
+        'compavatarUrl' => 'asdwqeqwe.jpg'
+        'firstName' => 'Artur'
+        'lastName' => 'Pirogov'
+        'basicSpec' => '1'
+        'addSpec' => '2'
+        'skills' => '1'
+        'avatarUrl' => 'dsadw'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+    'PHPSESSID' => 'rs6b6jqqrgg3ms6srsn8gh22u0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D; PHPSESSID=rs6b6jqqrgg3ms6srsn8gh22u0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '532'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10956'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignupemp'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478894567.526
+    'REQUEST_TIME' => 1478894567
+    'argv' => [
+        0 => 'r=site%2Fsignupemp'
+    ]
+    'argc' => 1
+]
+2016-11-11 23:03:42 [127.0.0.1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\models\SignupEmpForm.php(107): yii\db\BaseActiveRecord->save()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(185): frontend\models\SignupEmpForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignupemp()
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null
+The SQL being executed was: INSERT INTO `profile` (`id`, `firstName`, `lastName`, `basicSpec`, `addSpec`, `skills`, `avatarUrl`, `company_id`) VALUES (NULL, 'Artur', 'Pirogov', 1, 2, '1', 'dsadw', NULL)' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `pr...')
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\db\BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\models\SignupEmpForm.php(107): yii\db\BaseActiveRecord->save()
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(185): frontend\models\SignupEmpForm->signup()
+#7 [internal function]: frontend\controllers\SiteController->actionSignupemp()
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#9 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'id' cannot be null
+)
+
+2016-11-11 23:03:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupemp'
+]
+
+$_POST = [
+    '_csrf' => 'Tzg5Qk0uaVQnQXEDfl8AHzVKQBI9HwwLK3VgI3l9I2c3fGk2KE1RFg=='
+    'SignupEmpForm' => [
+        'username' => 'arturpirog'
+        'password' => 'asdasdasd'
+        'email' => 'asdasdqweqwe@wqe.ee'
+        'compname' => 'GazProm'
+        'comptextInfo' => 'Moja compania top'
+        'compavatarUrl' => 'asdwqeqwe.jpg'
+        'firstName' => 'Artur'
+        'lastName' => 'Pirogov'
+        'basicSpec' => '1'
+        'addSpec' => '2'
+        'skills' => '1'
+        'avatarUrl' => 'dsadw'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+    'PHPSESSID' => 'rs6b6jqqrgg3ms6srsn8gh22u0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D; PHPSESSID=rs6b6jqqrgg3ms6srsn8gh22u0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '532'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10969'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignupemp'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478894621.432
+    'REQUEST_TIME' => 1478894621
+    'argv' => [
+        0 => 'r=site%2Fsignupemp'
+    ]
+    'argc' => 1
+]
+2016-11-11 23:05:48 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$company' (T_VARIABLE)' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\models\SignupEmpForm.php:90
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-11-11 23:05:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupemp'
+]
+
+$_POST = [
+    '_csrf' => 'Tzg5Qk0uaVQnQXEDfl8AHzVKQBI9HwwLK3VgI3l9I2c3fGk2KE1RFg=='
+    'SignupEmpForm' => [
+        'username' => 'arturpirog'
+        'password' => 'asdasdasd'
+        'email' => 'asdasdqweqwe@wqe.ee'
+        'compname' => 'GazProm'
+        'comptextInfo' => 'Moja compania top'
+        'compavatarUrl' => 'asdwqeqwe.jpg'
+        'firstName' => 'Artur'
+        'lastName' => 'Pirogov'
+        'basicSpec' => '1'
+        'addSpec' => '2'
+        'skills' => '1'
+        'avatarUrl' => 'dsadw'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+    'PHPSESSID' => 'rs6b6jqqrgg3ms6srsn8gh22u0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D; PHPSESSID=rs6b6jqqrgg3ms6srsn8gh22u0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '532'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10987'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignupemp'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478894748.542
+    'REQUEST_TIME' => 1478894748
+    'argv' => [
+        0 => 'r=site%2Fsignupemp'
+    ]
+    'argc' => 1
+]
+2016-11-11 23:06:04 [127.0.0.1][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must implement interface yii\web\IdentityInterface, boolean given, called in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php on line 186 and defined' in D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\User.php:245
+Stack trace:
+#0 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\User.php(245): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', 'D:\\OpenServer\\O...', 245, Array)
+#1 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\controllers\SiteController.php(186): yii\web\User->login(true)
+#2 [internal function]: frontend\controllers\SiteController->actionSignupemp()
+#3 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signupemp', Array)
+#6 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/signupemp', Array)
+#7 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\OpenServer\OpenServer\domains\exortlocal\fullwork\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2016-11-11 23:06:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signupemp'
+]
+
+$_POST = [
+    '_csrf' => 'Tzg5Qk0uaVQnQXEDfl8AHzVKQBI9HwwLK3VgI3l9I2c3fGk2KE1RFg=='
+    'SignupEmpForm' => [
+        'username' => 'arturpirog'
+        'password' => 'asdasdasd'
+        'email' => 'asdasdqweqwe@wqe.ee'
+        'compname' => 'GazProm'
+        'comptextInfo' => 'Moja compania top'
+        'compavatarUrl' => 'asdwqeqwe.jpg'
+        'firstName' => 'Artur'
+        'lastName' => 'Pirogov'
+        'basicSpec' => '1'
+        'addSpec' => '2'
+        'skills' => '1'
+        'avatarUrl' => 'dsadw'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B\";}'
+    'PHPSESSID' => 'rs6b6jqqrgg3ms6srsn8gh22u0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'exortlocal'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://exortlocal/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'HTTP_COOKIE' => '_csrf=db309ec6cec19320e377f3a1bd44052f371597e1a5ac363e30bfadedea2e0a06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hyHA3qiKzryPp1e_dMYa4SJ3xDPtec8B%22%3B%7D; PHPSESSID=rs6b6jqqrgg3ms6srsn8gh22u0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '532'
+    'PATH' => 'd:\\openserver\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\openserver\\modules\\imagemagick;d:\\openserver\\openserver\\modules\\wget\\bin;d:\\openserver\\openserver\\modules\\git;d:\\openserver\\openserver\\modules\\git\\bin;d:\\openserver\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\openserver\\modules\\git\\cmd;d:\\openserver\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'exortlocal'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/OpenServer/domains/exortlocal'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/OpenServer/domains/exortlocal/fullwork/frontend/web/index.php'
+    'REMOTE_PORT' => '10988'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignupemp'
+    'REQUEST_URI' => '/fullwork/frontend/web/index.php?r=site%2Fsignupemp'
+    'SCRIPT_NAME' => '/fullwork/frontend/web/index.php'
+    'PHP_SELF' => '/fullwork/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1478894763.433
+    'REQUEST_TIME' => 1478894763
+    'argv' => [
+        0 => 'r=site%2Fsignupemp'
+    ]
+    'argc' => 1
+]

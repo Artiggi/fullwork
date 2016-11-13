@@ -34,16 +34,9 @@ class VacancyController extends Controller
      * @return mixed
      */
     public function actionIndex()
-    {
-        $vacancy = new Vacancy();
-        if ($vacancy->load(Yii::$app->request->post()) && $vacancy->save())
-        {
-            $vacancy = new Notes();
-        }
-        
+    {     
         $searchModel = new VacancySearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,

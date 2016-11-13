@@ -39,14 +39,14 @@ AppAsset::register($this);
 
 <?= $this->render($viewHeader) ?>
 <?= $this->render($viewNavbar) ?>
-<div class="inner-content">
+
     <div class="container">
         <div class="row">
             <?= $this->render($viewContent, ['content' => $content]) ?>
             <?//= $this->render($viewSidebar) ?>
         </div>
     </div>
-</div>
+
 <?= $this->render($viewFooter) ?>
 
 </div>

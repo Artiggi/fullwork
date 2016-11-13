@@ -7,33 +7,85 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Signup';
+$this->title = 'Регистрация фрилансера';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-signup">
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1 class="text-center"><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to signup:</p>
+    <p class="text-center">Необходимо заполнить поля:</p>
 
-    <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 free-course">
+                <?php $form = ActiveForm::begin(['id' => 'form-signup', 'class' => 'text-left']); ?>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+                        </div>
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'password')->passwordInput() ?>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'email') ?>
+                        </div>
+                    </div>
 
-                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
-                <?= $form->field($model, 'email') ?>
-                <?= $form->field($model, 'password')->passwordInput() ?>
-                <?= $form->field($model, 'firstName') ?>
-                <?= $form->field($model, 'lastName') ?>
-                <?= $form->field($model, 'basicSpec') ?>
-                <?= $form->field($model, 'addSpec') ?>
-                <?= $form->field($model, 'skills') ?>
-                <?= $form->field($model, 'avatarUrl') ?>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'compname') ?>
+                        </div>
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'comptextInfo') ?>
+                        </div>
+                    </div>
 
-                <div class="form-group">
-                    <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
-                </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'compavatarUrl') ?>
+                        </div>
+                    </div>
 
-            <?php ActiveForm::end(); ?>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'firstName') ?>
+                        </div>
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'lastName') ?>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'basicSpec') ?>
+                        </div>
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'addSpec') ?>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'skills') ?>
+                        </div>
+                        <div class="col-md-6">
+                            <?= $form->field($model, 'avatarUrl') ?>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                    <div class="form-group">
+                        <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
+                    </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                    </div>
+                <?php ActiveForm::end(); ?>
+            </div>
+        <div class="col-md-2"></div>    
         </div>
     </div>
+
 </div>

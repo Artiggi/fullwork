@@ -20,9 +20,6 @@
                 <div class="search-trigger"><img src="images/ico/search.png" alt=""/></div>
             </div>
         </div>
-        <div class="freebie-btn">
-            <a href="#"></a>
-        </div>
     </div>
 </header>
 <!-- HEADER -->

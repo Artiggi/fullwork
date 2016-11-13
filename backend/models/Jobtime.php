@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace backend\models;
 
 use Yii;
 
@@ -26,8 +26,8 @@ class Jobtime extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['jobtime'], 'required'],
-            [['jobtime'], 'string', 'max' => 255],
+            [['name'], 'required'],
+            [['name'], 'string', 'max' => 255],
         ];
     }
 
@@ -38,7 +38,7 @@ class Jobtime extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'jobtime' => 'Jobtime',
+            'name' => 'name',
         ];
     }
 }

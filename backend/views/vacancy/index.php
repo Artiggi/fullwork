@@ -12,31 +12,23 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="vacancy-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <?= $this->render('_form', [
-        'vacancy' => $vacancy,
-    ]) ?>
-
-
-
 <?php Pjax::begin(['id' => 'vacancy','enablePushState' => false]); ?>    
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-            'id',
+            //'id',
             'title',
             'text:ntext',
             'date',
             'minprice',
             'maxprice',
             'employer_id',
-            'scope_id',
+            'scopeValue',
             'skill_id',
-            'jobtime_id:datetime',
-            'city_id',
+            'jobtimeValue',
+            'cityValue',
             'mtop',
             ['class' => 'yii\grid\ActionColumn'],
         ],

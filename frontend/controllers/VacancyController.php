@@ -62,7 +62,7 @@ class VacancyController extends Controller
         $city = new Cities;
         $vacancy = new Vacancy();
         $scope = Scope::find()->all();
-        $scopeItems = ArrayHelper::map($scope, 'id', 'scope');
+        $scopeItems = ArrayHelper::map($scope, 'id', 'name');
             /*
             $scope->find()
             ->select(['scope as scope', 'id as id'])

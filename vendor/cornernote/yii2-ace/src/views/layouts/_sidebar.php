@@ -37,7 +37,7 @@ $controller = Yii::$app->controller;
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-users"></i>
                     <span class="menu-text">
-                        Users
+                        Вакансии
                     </span>
                 <b class="arrow fa fa-angle-down"></b>
             </a>
@@ -46,30 +46,9 @@ $controller = Yii::$app->controller;
 
             <ul class="submenu">
                 <li class="<?php echo $controller && $controller->module->id == 'user' && $controller->id == 'admin' && $controller->action->id == 'create' ? 'active' : '' ?>">
-                    <a href="<?= Url::to(['/user/admin/create']) ?>">
+                    <a href="<?= Url::to(['vacancy/index']) ?>">
                         <i class="menu-icon fa fa-caret-right"></i>
-                        Create User
-                    </a>
-                    <b class="arrow"></b>
-                </li>
-                <li class="<?php echo $controller && $controller->module->id == 'user' && $controller->id == 'admin' && $controller->action->id == 'index' ? 'active' : '' ?>">
-                    <a href="<?= Url::to(['/user/admin/index']) ?>">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        List Users
-                    </a>
-                    <b class="arrow"></b>
-                </li>
-                <li class="<?php echo $controller && $controller->module->id == 'rbac' && $controller->id == 'role' && $controller->action->id == 'index' ? 'active' : '' ?>">
-                    <a href="<?= Url::to(['/rbac/role/index']) ?>">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        List Roles
-                    </a>
-                    <b class="arrow"></b>
-                </li>
-                <li class="<?php echo $controller && $controller->module->id == 'rbac' && $controller->id == 'permission' && $controller->action->id == 'index' ? 'active' : '' ?>">
-                    <a href="<?= Url::to(['/rbac/permission/index']) ?>">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        List Permissions
+                        Просмотр вакансий
                     </a>
                     <b class="arrow"></b>
                 </li>

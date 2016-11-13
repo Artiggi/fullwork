@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace backend\models;
 
 use Yii;
 
@@ -27,9 +27,9 @@ class Skill extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['skill', 'vacancy_id'], 'required'],
+            [['name', 'vacancy_id'], 'required'],
             [['vacancy_id'], 'integer'],
-            [['skill'], 'string', 'max' => 255],
+            [['name'], 'string', 'max' => 255],
         ];
     }
 
@@ -40,7 +40,7 @@ class Skill extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'skill' => 'Skill',
+            'name' => 'Name',
             'vacancy_id' => 'Vacancy ID',
         ];
     }

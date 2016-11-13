@@ -11,6 +11,7 @@ use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
+use frontend\models\SignupEmpForm;
 use frontend\models\ContactForm;
 
 /**
@@ -24,6 +25,7 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
+        /*
             'access' => [
                 'class' => AccessControl::className(),
                 'only' => ['logout', 'signup'],
@@ -45,7 +47,7 @@ class SiteController extends Controller
                 'actions' => [
                     'logout' => ['post'],
                 ],
-            ],
+            ],*/
         ];
     }
 
@@ -146,7 +148,15 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionSignup()
+
+    public function actionPresignup()
+    {
+        return $this->render('presignup');
+    }
+
+
+
+    public function actionSignupuser()
     {
 
 
@@ -164,6 +174,31 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
+    public function actionSignupemp()
+    {
+
+
+        $model = new SignupEmpForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($user = $model->signup()) {
+                if (Yii::$app->getUser()->login($user)) {
+                    return $this->goHome();
+                }
+            }
+        }
+
+
+        return $this->render('signupemp', [
+            'model' => $model,
+        ]);
+    }
+
+
+
+
+
 
     /**
      * Requests password reset.

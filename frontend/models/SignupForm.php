@@ -55,6 +55,16 @@ class SignupForm extends Model
      *
      * @return User|null the saved model or null if saving fails
      */
+
+    public function attributeLabels()
+    {
+        return [
+            'username' => 'Имя пользователя',
+        ];
+    }
+
+
+
     public function signup()
     {
         if (!$this->validate()) {
@@ -68,7 +78,7 @@ class SignupForm extends Model
         $user->generateAuthKey();
         
         return $user->save() ? $user : null;
-
+        
         $profile = new Profile();
         $profile->id = $user->id;
         $profile->firstName = $this->firstName;

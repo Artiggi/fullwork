@@ -1,18 +1,10 @@
 <!-- MAIN CONTENT -->
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <!-- BLOG POST -->
                 <div class="home-blog">
-                    <div class="full-post">
+                    
                         <?= $content ?>
-                    </div>
-                    
-                    
-                    
-                    <div class="sep"></div>
-                    
-                    
-                    
-                    
+                                        
                 </div>
                 
 
@@ -30,7 +22,7 @@
                 </div>
                 -->        
                 
-                <!-- PAGINATION -->
+                <!-- PAGINATION 
                 <div class="page_nav">
                     <ul>
                         <li class="active"><a href="./index.html">1</a></li>
@@ -38,6 +30,7 @@
                         <li><a href="./index.html">3</a></li>
                     </ul>
                 </div>
+                -->
             </div>
             
             
